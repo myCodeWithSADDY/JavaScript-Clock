@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 800px;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.267);
+  opacity: 4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("./assests/bg.jpg");
+  overflow: hidden;
+}
+
+.clock {
+  color: #ffffff;
+  font-size: 110px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  align-items: center;
+}
+
+.clock span {
+  font-size: 80px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.clock span::after {
+  margin-top: 2px;
+  font-size: 16px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#hours::after {
+  content: "HOURS";
+}
+
+#min::after {
+  content: "MINUTES";
+}
+
+#sec::after {
+  content: "SECONDS";
+}/*# sourceMappingURL=style.css.map */
